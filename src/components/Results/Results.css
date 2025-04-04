@@ -1,0 +1,12 @@
+#results-container {
+  width: 60%;
+  margin-top: 3rem;
+  background-color: var(--bg-off);
+  border-radius: 50px;
+}
+
+#results-container h2 {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--orange-main);
+}
