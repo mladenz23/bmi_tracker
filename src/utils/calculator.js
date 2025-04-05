@@ -1,5 +1,5 @@
 export function calculateBMI(age, height, weight) {
-  if (age === '' || height === '' || weight === '') return '';
+  if (!age || !height || !weight) return '';
 
   const heightInMeters = height / 100;
   const bmi = weight / (heightInMeters * heightInMeters);
@@ -28,6 +28,6 @@ export function getCategory(bmi) {
   } else if (bmi >= 30) {
     return tips.obese;
   } else {
-    return 'How does being tied to your bed feel buddy?';
+    return 'bruh...';
   }
 }
