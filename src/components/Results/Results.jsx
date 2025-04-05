@@ -1,9 +1,10 @@
 import './Results.css';
 
-export default function Results({ bmi, category, message }) {
+export default function Results({ age }) {
   return (
-    <div id="results-container">
-      <h2>Results</h2>
+    <div id='results-container'>
+      <h2>RESULTS</h2>
+      <p>Age: {age}</p>
     </div>
-  )
+  );
 }

@@ -5,10 +5,6 @@ import Results from './components/Results/Results.jsx';
 import './App.css';
 
 function App() {
-  const [age, setAge] = useState('');
-  const [height, setHeight] = useState('');
-  const [weight, setWeight] = useState('');
-
   return (
     <>
       <main>
@@ -16,7 +12,6 @@ function App() {
         <Input label='height' placeholder='cm' />
         <Input label='weight' placeholder='kg' />
       </main>
-
       <Results />
     </>
   );
