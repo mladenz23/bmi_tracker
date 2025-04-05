@@ -1,6 +1,11 @@
 import './Input.css';
 
-export default function Input({ label, placeholder, onInputChange, inputValue }) {
+export default function Input({
+  label,
+  placeholder,
+  onInputChange,
+  inputValue,
+}) {
   return (
     <div id='input-container'>
       <label htmlFor={label}>{label[0].toUpperCase() + label.slice(1)}</label>
@@ -9,6 +14,7 @@ export default function Input({ label, placeholder, onInputChange, inputValue })
         pattern='[0-9]*'
         inputMode='numeric'
         min='0'
+        max={label === 'age' ? '120' : '300'}
         placeholder={placeholder}
         id={label}
         value={inputValue.label}

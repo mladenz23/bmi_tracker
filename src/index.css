@@ -6,6 +6,14 @@
   --text-main: #ddd;
   --input-main: #444;
   --orange-main: rgb(255, 122, 0);
+  --orange-off: rgb(255, 186, 122);
+
+  --low: rgb(55, 160, 192);
+  --normal: rgb(0, 255, 0);
+  --overweight: rgb(255, 255, 0); 
+  --obese: rgb(255, 55, 55);
+
+  --main-width: 600px;
 }
 
 * {

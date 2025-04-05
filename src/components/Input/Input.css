@@ -7,15 +7,22 @@
 
 #input-container label {
   margin-bottom: 0.2rem;
+  color: var(--bg-main);
 }
 
 #input-container input {
-  width: 50%;
+  width: 45%;
   text-align: center;
   font-size: 1.3em;
   padding: 5px;
-  border: 2px solid var(--orange-main);
-  border-radius: 50px;
+  border: none;
+  border-radius: 10px;
   background-color: var(--bg-main);
   color: var(--text-main);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
