@@ -1,7 +1,8 @@
 import { calculateBMI } from '../../utils/calculator.js';
 import { getCategory } from '../../utils/calculator.js';
-import { addCategoryColors } from '../../utils/calculator.js';
 import { styled } from 'styled-components';
+
+
 
 const ResultsContainer = styled.div`
   width: var(--main-width);

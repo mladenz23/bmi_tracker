@@ -1,8 +1,15 @@
 import { useState } from 'react';
-
 import Input from './components/Input/Input.jsx';
 import Results from './components/Results/Results.jsx';
-import './App.css';
+import styled from 'styled-components';
+
+const MainContainer = styled.main`
+  width: var(--main-width);
+  padding: 1.5rem 0;
+  background: linear-gradient(330deg, var(--orange-off), var(--orange-main));
+  border-radius: 10px;
+  margin-top: 3rem;
+`
 
 function App() {
   const [userInput, setUserInput] = useState({
@@ -22,7 +29,7 @@ function App() {
 
   return (
     <>
-      <main>
+      <MainContainer>
         <Input
           label='age'
           placeholder='Enter Age'
@@ -41,7 +48,7 @@ function App() {
           onInputChange={handleInputChange}
           inputValue={userInput}
         />
-      </main>
+      </MainContainer>
       <Results inputValue={userInput} />
     </>
   );

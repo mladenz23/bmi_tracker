@@ -17,13 +17,14 @@ export function getCategory(bmi) {
     high: 'Your BMI is above the normal range. It is important to maintain a healthy weight. Consider consulting a healthcare professional for personalized advice.',
     obese:
       'Your BMI indicates obesity. It is important to maintain a healthy weight. Consider consulting a healthcare professional for personalized advice.',
+    default: 'bruh...'
   };
 
   if (bmi < 18.5) return tips.low;
   if (bmi >= 18.5 && bmi < 25) return tips.normal;
   if (bmi >= 25 && bmi < 30) return tips.high;
   if (bmi >= 30) return tips.obese;
-  else return 'bruh...';
+  else return tips.default;
 }
 
 export function addCategoryColors(bmi) {
@@ -41,3 +42,4 @@ export function addCategoryColors(bmi) {
   if (bmi >= 30) return colors.obese;
   else return colors.default;
 }
+
