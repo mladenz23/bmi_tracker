@@ -1,4 +1,4 @@
-#results-container {
+/* #results-container {
   width: var(--main-width);
   margin-top: 2rem;
   padding: 2rem 0;
@@ -25,4 +25,6 @@
   background-color: var(--bg-main);
   padding: 1.5rem 1rem;
   border-radius: 10px;
-}
+} */
+
+/* trying styled components */

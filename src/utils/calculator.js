@@ -19,15 +19,25 @@ export function getCategory(bmi) {
       'Your BMI indicates obesity. It is important to maintain a healthy weight. Consider consulting a healthcare professional for personalized advice.',
   };
 
-  if (bmi < 18.5) {
-    return tips.low;
-  } else if (bmi >= 18.5 && bmi < 25) {
-    return tips.normal;
-  } else if (bmi >= 25 && bmi < 30) {
-    return tips.high;
-  } else if (bmi >= 30) {
-    return tips.obese;
-  } else {
-    return 'bruh...';
-  }
+  if (bmi < 18.5) return tips.low;
+  if (bmi >= 18.5 && bmi < 25) return tips.normal;
+  if (bmi >= 25 && bmi < 30) return tips.high;
+  if (bmi >= 30) return tips.obese;
+  else return 'bruh...';
+}
+
+export function addCategoryColors(bmi) {
+  const colors = {
+    low: 'var(--low)',
+    normal: 'var(--normal)',
+    high: 'var(--overweight)',
+    obese: 'var(--obese)',
+    default: 'var(--text-main)'
+  };
+
+  if (bmi < 18.5) return colors.low;
+  if (bmi >= 18.5 && bmi < 25) return colors.normal;
+  if (bmi >= 25 && bmi < 30) return colors.high;
+  if (bmi >= 30) return colors.obese;
+  else return colors.default;
 }
